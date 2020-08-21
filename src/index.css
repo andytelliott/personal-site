@@ -1,0 +1,22 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+:root {
+  --light-gray: hsla(222, 16%, 84%, 1);
+  --outer-space-crayola: hsla(164, 9%, 23%, 1);
+  --princeton-orange: hsla(26, 100%, 58%, 1);
+  --baby-powder: hsla(60, 100%, 99%, 1);
+  --rich-black: hsla(270, 6%, 7%, 1);
+}

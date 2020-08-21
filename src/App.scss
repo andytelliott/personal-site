@@ -1,0 +1,169 @@
+.App {
+  background-color: var(--baby-powder);
+
+}
+section {
+  background-color: var(--baby-powder);
+  min-height: 100vh;
+  width: 100vw;
+}
+
+header {
+  nav {
+    background: var(--baby-powder);
+  }
+  ul.navLinks {
+    display: none;
+    flex-direction: row;
+    list-style-type: none;
+    // padding-left: 0;
+
+    li a {
+      transition: 0.2s ease-in-out;
+      color: var(--rich-black);
+      padding: 1em;
+      text-decoration: none;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+  .hamburger {
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    height: 50px;
+    border: none;
+    background: transparent;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+main {
+  z-index: 0;
+  position: relative;
+  padding-top: 50px;
+  overflow-x: hidden;
+  section {
+    // background: magenta;
+    //opacity: 0.8;
+    position: relative;
+    z-index: 2;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    .sectionTitle {
+      font-weight: 300;
+      margin-bottom: 0;
+      font-size: 2em;
+    }
+  }
+  #About {
+    z-index: 1;
+    position: fixed;
+    left: 8px;
+    .profilePic {
+      background-image: url("/ProfilePic.JPEG");
+      border-radius: 50%;
+      height: 18em;
+      width: 18em;
+      background-size: cover;
+      background-position: center center;
+      position: relative;
+      box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+      
+    }
+    .title {
+      text-transform: uppercase;
+      font-family: 'Poppins', sans-serif;
+      color: var(--rich-black);
+      margin: 0;
+      span {
+        font-weight: bold;
+        color: var(--princeton-orange);
+      }
+    }
+    p{
+      a{
+        color: var(--princeton-orange);
+      }
+    }
+    .oval {
+      width:60vw;
+      height:100vh;
+      background: var(--outer-space-crayola);
+      border-radius: 50%;
+      filter:blur(140px);
+      position: absolute;
+      left: -20vw;
+      top: -20vh;
+      transform: rotate(-35deg);
+      z-index: 0;
+      opacity: 0.6;
+      &.orange {
+        background: var(--princeton-orange);
+        left: 60vw;
+        top: 70vh;
+      }
+    }
+  }
+  #Projects {
+    margin-top: 100vh;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2);
+  }
+  #FaithActivities {
+  }
+  #ContactMe {
+  }
+}
+.containerX {
+  width: 95%;
+  padding-left: 2.5%;
+  padding-right: 2.5%
+}
+.projectTitle {
+  margin-top: 1.5em;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+@media only screen and (min-width: 48em) {
+  section {
+    
+  }
+  header {
+    ul.navLinks {
+      display: flex;
+    }
+    .hamburger {
+      display:none;
+    }
+  }
+  .containerX {
+    width: 95%;
+    padding-left: 2.5%;
+    padding-right: 2.5%
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  section {
+    
+  }
+  .containerX {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  section {
+    
+  }
+  .containerX {
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%
+  }
+}
