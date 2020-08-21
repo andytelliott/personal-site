@@ -36,7 +36,7 @@ jobs:
       with:
         source-directory: 'build'
         destination-github-username: 'andytelliott'
-        destination-repository-name: 'andytelliott.github.io'
+        destination-repository-name: 'andytelliott.github.io' 
         user-email: kingelliott80@gmail.com
   
 
