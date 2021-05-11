@@ -9,11 +9,14 @@ const AboutMe = () => {
       <div className="col-xs-11 col-sm-5 col-sm-offset-1 ">
         <h1 className="title">
           {" "}
-          I'm <span>Andrew Elliott</span>{" "}
+          My name is <span>Andrew Elliott</span>{" "}
         </h1>
         <p>
-          Wowwww i love to dance. Do you like to dance? You can also{" "}
-          <a href="#Contact">contact me</a>.
+          Welcome to my website! First and foremeost, I am an ambassador for Jesus Christ, husband, and a Computer Engineering graduate from North Dakota State University!
+          I made this website for you to share more information about myself. Scroll down to learn more! Feel free to 
+          {" "}
+          <a href="#Contact">contact me </a> 
+          if you have any questions or want to chat!
         </p>
       </div>
     </section>
